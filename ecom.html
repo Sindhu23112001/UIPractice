@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        /* Reset some default styles */
+        body, ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .menu-container {
+            display: flex;
+            flex-direction: column;
+           
+             /* Stack menus vertically */
+        }
+
+        /* Style for the navigation menu */
+        nav {background-color:white;
+            color: white;
+            padding: 10px;
+            text-align: right;
+            display: flex;
+            justify-content: space-between; /* Align items to each end */
+            align-items: right;
+        }
+
+        /* Style for the menu items */
+        nav ul {
+            display: flex;
+            
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Change the color of the link on hover */
+        nav a:hover {
+            color: #ffcc00;
+        }
+        nav img {
+            height: 100px;
+            margin-right: 800px;
+        } 
+        nav ul:last-child {
+            margin-left: auto;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .product-name {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .star-rating {
+            color: #ffcc00;
+            margin-top: 10px;
+        }
+     
+    </style>
+    <title>HTML Menu Example</title>
+</head>
+<body>
+    <div class="menu-container">
+    <nav>
+        <img src="C:\Users\Naveen\Downloads\one.png" alt="Logo">
+        <ul>
+           <li><button type="submit">Sing Up/Login</button></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <!-- Another menu with a different logo if needed -->
+
+        <ul>
+            <li><a href="#">Mobiles</a></li>
+            <li><a href="#">TVs</a></li>
+            <li><a href="#">Monitors</a></li>
+            <li><a href="#">Refrigerators</a></li>
+            <li><a href="#">ACs</a></li>
+            <li><a href="#">Bluetooth Devices</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="product-container">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="C:\Users\Naveen\Downloads\laptop.png" alt="Product 1" class="product-image">
+            <div class="Laptop">Laptop</div>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="star-rating">⭐⭐⭐⭐</div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="C:\Users\Naveen\Downloads\mobs.png" alt="Product 2" class="product-image">
+            <div class="Mobile">Mobile</div>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="C:\Users\Naveen\Downloads\tv.png" alt="Product 3" class="product-image">
+            <div class="TV">TV</div>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="C:\Users\Naveen\Downloads\ref.png" alt="product 4" class="
+ ">
+            <div>Refrigerator</div>
+            <button>Add to Cart</button>
+            <div>⭐⭐⭐</div>
+        </div>
+    </div>
+
+
+</body>
+</html>
