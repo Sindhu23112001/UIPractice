@@ -1,0 +1,60 @@
+.circle1{
+    width:100px;
+    height:100px;
+    background-color: blue;
+    position: absolute;
+    border-radius: 50%;
+    left: 100px;
+    top: 250px;
+    transition: 2.5s;
+}
+.circle2{
+    width:100px;
+    height:100px;
+    background-color:  magenta;
+    position: absolute;
+    border-radius: 50%;
+    left: 1000px;
+    top: 250px;
+    transition: 2.5s;
+}
+.circle3{
+    width:100px;
+    height:100px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    left: 550px;
+    top: 50px;
+    transition: 2.5s;
+}
+.circle4{
+    width:100px;
+    height:100px;
+    background-color:  red;
+    position: absolute;
+    border-radius: 50%;
+    left: 550px;
+    top: 500px;
+    transition: 2.5s;
+}
+.circle1:hover{
+    transform: scale(2.5);
+    left: 1000px;
+    transition: 2.5s;
+}
+.circle2:hover{
+    transform: scale(2.5);
+     left: 0;
+    transition: 2.5s;
+}
+.circle3:hover{
+    transform: scale(2.5);
+    top: 500px;
+    transition: 2.5s;
+}
+.circle4:hover{
+    transform: scale(2.5);
+    top: 50px;
+    transition: 2.5s;
+}
