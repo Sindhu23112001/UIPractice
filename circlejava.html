@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+    .top{
+        width:100px;
+        height:100px;
+        background-color: red;
+        position: absolute;
+        border-radius: 50%;
+        left: 600px;
+        top: 500px;
+    }
+    .bottom{
+        width:100px;
+        height:100px;
+        background-color: rgb(25, 0, 255);
+        position: absolute;
+        border-radius: 50%;
+        left: 600px;
+        bottom: 500px;
+    }
+    .left{
+        width:100px;
+        height:100px;
+        background-color: rgb(251, 255, 0);
+        position: absolute;
+        border-radius: 50%;
+        left: 1000px;
+        top: 250px;
+    }
+    .right{
+        width:100px;
+        height:100px;
+        background-color: rgb(0, 255, 0);
+        position: absolute;
+        border-radius: 50%;
+        right: 1000px;
+        top: 250px;
+    }
+</style>
+    <script>
+        function sendmetop(){
+            document.getElementById("top").style.top="0px";
+            document.getElementById("top").style.transition="0.6s";
+            document.getElementById("top").style.transform="scale(0.5)";
+            document.getElementById("top").style.backgroundColor="red";
+         }
+         function sendmebottom(){
+            document.getElementById("bottom").style.bottom="0px";
+            document.getElementById("bottom").style.transition="0.6s";
+            document.getElementById("bottom").style.transform="scale(0.5)";
+            document.getElementById("bottom").style.backgroundColor="red";
+         }
+         function sendmeleft(){
+            document.getElementById("left").style.left="0px";
+            document.getElementById("left").style.transition="0.6s";
+            document.getElementById("left").style.transform="scale(0.5)";
+            document.getElementById("left").style.backgroundColor="red";
+         }
+         function sendmeright(){
+            document.getElementById("right").style.right="0px";
+            document.getElementById("right").style.transition="0.6s";
+            document.getElementById("right").style.transform="scale(0.5)";
+            document.getElementById("right").style.backgroundColor="red";
+         }
+         
+        
+        </script>
+    
+</head>
+<body>
+   <div class="top" id="top" onmouseover="sendmetop()"></div> 
+   <div class="bottom" id="bottom" onmouseover="sendmebottom()"></div> 
+   <div class="left" id="left" onmouseover="sendmeleft()"></div> 
+   <div class="right" id="right" onmouseover="sendmeright()"></div> 
+</body>
+</html>
