@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+<body>
+    <div>
+    <h1 id="result">0</h1>
+</div>
+    <button onclick="addnum(1)">add 1</button>
+    <button onclick="addnum(2)">add 2</button>
+    <button onclick="addnum(3)">add 3</button>
+    <button onclick="clearnum()">Clear</button>
+    <script>
+        let currentValue = 0;
+        function addnum(a){
+            currentValue += a;
+            document.getElementById("result").innerText=currentValue;
+
+        }
+        function clearnum(){
+            currentValue = 0;
+            document.getElementById("result").innerText=currentValue;
+
+        }
+    </script>
+</body>
+</html>
