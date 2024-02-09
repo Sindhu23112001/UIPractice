@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .row{
+            display:flex;
+            justify-content: space-around;
+            margin-top: 100px;
+        }
+        .light{
+            width:10%;
+            height:25%;
+        }
+        .dark{
+            width:10%;
+            height:25%;
+        }
+    </style>
+    <script>
+        function light(){
+        document.body.style.backgroundColor='#f0f0f0';
+        document.body.style.color='#333'; 
+        }
+        function dark(){
+            document.body.style.backgroundColor='#333';
+            document.body.style.Color='#f0f0f0';  
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="image"><img src="C:\Users\Naveen\Pictures\rud.png"></div>
+           
+            <a href="#">Home</a>
+            <a href="#">Service</a>
+            <a href="#">About</a>
+            <a href="#">Register</a>
+        <button class="light" id="light" onclick="light(this)">Light Theme</button>
+        <button class="dark" id="dark" onclick="dark(this)">Dark Theme</button>
+    </div>
+    </div>
+</body>
+</html>
